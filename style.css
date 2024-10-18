@@ -1,59 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-  margin:0px;
-  padding:0px;
-  box-sizing:border-box;
+@import url("https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
-.navbar{
-  padding:23px;
-  border-bottom:1px solid #D5D5D5;
+.navbar {
+  padding: 23px;
+  border-bottom: 1px solid #d5d5d5;
 }
-.image-container{
-  padding:0px 20px 0px 0px;
-}
-
-.btn{
-  background: #DC2316;
-  color:#ffffff;
+.image-container {
+  padding: 0px 20px 0px 0px;
 }
 
-.btn:hover{
-  background-color: #DC2316;
-  color:white
-}
-
-li .nav-link{
+.btn {
+  background: #dc2316;
   color: #ffffff;
 }
-li .nav-link:hover{
-background-color: #281571;
-border-radius: 5px;
-color:#ffff;
+
+.btn:hover {
+  background-color: #dc2316;
+  color: white;
 }
 
+li .nav-link {
+  color: #ffffff;
+}
+li .nav-link:hover {
+  background-color: #281571;
+  border-radius: 5px;
+  color: #ffff;
+}
+/* .hero-section {
+  height: 100vh;
+} */
 .hero-section {
-  background: linear-gradient(to bottom,
+  background: linear-gradient(
+      to bottom,
       rgba(12, 12, 12, 0.7),
-      rgba(5, 4, 4, 0.7)),
+      rgba(5, 4, 4, 0.7)
+    ),
     url(./images/html-css-collage-concept-with-person\ 2.png);
   background-size: cover;
   background-position: center;
   color: #ffffff;
+  padding-bottom:30px;
 }
 
-.hero-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.hero-content p{
-  text-align: center;
-} 
- a{
+a {
   text-decoration: none;
   color: white;
   /* border:1px solid #ffff;
@@ -62,48 +60,103 @@ color:#ffff;
 }
 
 
- .hero-section{
-  height: 100vh ;
+
+.hero-content {
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
 }
-.hero-content .learn-more{
+.hero-content h1 {
+  font-size: 200px;
+  font-weight: 400;
+  font-family: Lateef;
+  line-height: 200.8px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  font-family: "Lateef", serif;
+}
+
+.hero-content p {
+  width: 70%;
+  margin: auto;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: Be Vietnam;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 34.29px;
+}
+
+
+.hero-content .learn-more {
   text-decoration: none;
-  border:1px solid #ffff;
-  color:#ffff;
+  border: 1px solid #ffff;
+  color: #ffff;
   padding: 5px 90px 5px 0;
   overflow: hidden;
 }
-.hero-content .learn-more span{
+.hero-content .learn-more span {
   display: inline-block;
   padding: 5px;
   border: 1px solid orange;
   border-radius: 10px;
   transform: translateX(-50px);
-  transition: .5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
-.hero-content .learn-more:hover span{
+.hero-content .learn-more:hover span {
   transform: translateX(150px);
 }
 
+.learn-more:hover {
+  border-left: none;
+  border-bottom: none;
+}
 
-
-.card{
+.card {
   margin: 100px auto;
   width: 300px;
   height: 300px;
   position: relative;
 }
 
-
-.card img{
+.card img {
   position: absolute;
   width: 100%;
   height: 100%;
   bottom: 0;
   z-index: 00;
 }
-.card .card-content{
+.card .card-content {
   position: relative;
   z-index: 11;
   color: white;
   padding: 10px;
+}
+
+/* feature section */
+
+.features-section{
+ margin: 50px;
+ padding-left: 10px;
+   font-family: "Be Vietnam Pro", sans-serif;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Item h3{
+  font-size: 19;
+}
+
+
+.Item{
+border-left:3px solid #ffff ;
+padding:0px 50px 0px 20px;
+}
+.Item p{
+  font-size: 12px;
+  text-align: justify;
+  line-height: 25px;
 }
