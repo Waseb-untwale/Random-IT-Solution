@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.navbar {
+  padding: 23px;
+  border-bottom: 1px solid #d5d5d5;
+}
+.image-container {
+  padding: 0px 20px 0px 0px;
+}
+
+.btn {
+  background: #dc2316;
+  color: black;
+}
+
+.btn:hover {
+  background-color: #dc2316;
+  color: white;
+}
+
+li .nav-link {
+  color: black;
+}
+li .nav-link:hover {
+  background-color: #281571;
+  border-radius: 5px;
+  color: #ffff;
+}
+
+/* About section
+ */
+
+.top-section {
+  background: linear-gradient(
+      to bottom,
+      rgba(12, 12, 12, 0.7),
+      rgba(5, 4, 4, 0.7)
+    ),
+    url("../images/Rectangle\ 42.png");
+  color: white;
+}
+
+.top-section p {
+  font-family: Be Vietnam Pro;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* feature-section */
+
+.features-section .row {
+  background: #f9f9f9;
+}
+.features-section .row h2 span {
+  display: block;
+  color: red;
+}
+.features-section .row p {
+  font-family: Be Vietnam Pro;
+  padding: 10px 10px 0px 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+
+/* specality-section */
+
+.specality-section .row {
+  background: #f9f9f9;
+}
+
+.specality-section .row h2 span {
+  display: block;
+  color: red;
+}
+
+.specality-section .row p {
+  font-family: Be Vietnam Pro;
+  padding: 10px 10px 0px 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+
+
+/* vision section */
+
+
+.card{
+  border: 1px solid #ccc;
+}
+
+.vision-section h2 {
+  padding:0px 0px 0px 70px;
+}
+
+.vision-section h2 span{
+  display: block;
+  color:red;
+}
+
+/* footer section */
+.footer-section{
+  background: #191919;
+  color:white;
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  
+}
+
+li{
+  list-style-type: none;
+}
+
+.footer-section p{
+  text-align: justify;
+  font-weight: 300;
+}
+
+.footer-section li{
+  margin: 5px;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.footer-section .container .Home{
+  padding-left:50px;
+}
+
+.footer-section .container .About{
+  padding-left:50px;
+}
+
+
+.footer-section .contact .location{
+  display: flex;
+  gap:5px;
+}
+
+.footer-section span i{
+  margin-top:10px;
+  height: 20px;
+  width: 20px;
+}
+
+.contact .image-container{
+  width: 36px;
+  padding:10px;
+}
+
+li:nth-child(1) {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.footer-section .Social{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer-section .social-icons{
+  display: flex;
+  padding-top:10px;
+  justify-content: flex-start;
+  align-items: center;
+  gap:10px;
+  
+}
+
+
+.footer-section .social-icons .facebook {
+  width:36px;
+  height: 35px;
+  padding:1px;
+  color:black;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+.footer-section .social-icons .linkdin {
+  width:36px;
+  height: 35px;
+  padding:1px;
+  color:black;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+.footer-section .social-icons .twitter {
+  width:36px;
+  height: 35px;
+  padding:1px;
+  color:black;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
