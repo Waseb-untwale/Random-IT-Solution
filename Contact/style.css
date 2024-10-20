@@ -241,3 +241,6 @@ li:nth-child(1) {
   border-radius: 5px;
   background-color: #ffffff;
 }
+.footer-section .container .row{
+  border-bottom: 1px solid #ccc;
+}

@@ -37,8 +37,7 @@ li .nav-link:hover {
   color: #ffff;
 }
 
-/* About section
- */
+/* top-section */
 
 .top-section {
   background: linear-gradient(
@@ -57,62 +56,78 @@ li .nav-link:hover {
   line-height: 28px;
 }
 
-/* feature-section */
+/* repair-section */
 
-.features-section .row {
-  background: #f9f9f9;
-}
-.features-section .row h2 span {
-  display: block;
-  color: red;
-}
-.features-section .row p {
-  font-family: Be Vietnam Pro;
-  padding: 10px 10px 0px 0px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
-  text-align: left;
-}
-
-/* specality-section */
-
-.specality-section .row {
-  background: #f9f9f9;
-}
-
-.specality-section .row h2 span {
-  display: block;
-  color: red;
-}
-
-.specality-section .row p {
-  font-family: Be Vietnam Pro;
-  padding: 10px 10px 0px 0px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
-  text-align: left;
-}
-
-
-/* vision section */
-
-
-.card{
-  border: 1px solid #ccc;
-}
-
-.vision-section h2 {
-  padding:0px 0px 0px 70px;
-}
-
-.vision-section h2 span{
-  display: block;
+.repair-section h2 span{
   color:red;
+  display: block;
 }
 
-/* footer section */
+.repair-section .card h5{
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.24px;
+  text-align: left;
+}
+
+
+.repair-section .card p{
+  font-family: Be Vietnam Pro;
+font-size: 12px;
+font-weight: 300;
+line-height: 18px;
+text-align: left;
+}
+.repair-section .card .card-body{
+  background-color: black;
+  color:white
+}
+
+.repair-section .project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap:20px;
+}
+.repair-section .grid-item {
+  display: grid;
+  place-items: center;
+}
+.repair-section  a {
+  text-decoration: none;
+  color: black;
+}
+
+.repair-section .learn-more {
+  text-decoration: none;
+  border: 1px solid black;
+  color: #ffff;
+  width: fit-content;
+  padding: 5px 90px 5px 0;
+  overflow: hidden;
+  margin:auto
+}
+
+.repair-section .learn-more span {
+  display: inline-block;
+  padding: 5px;
+  color:black;
+  border: 1px solid orange;
+  border-radius: 10px;
+  transform: translateX(-50px);
+  transition: 0.5s all ease-in-out;
+}
+.repair-section .learn-more:hover span {
+  transform: translateX(150px);
+}
+
+.repair-section .learn-more:hover {
+  border-left: none;
+  border-bottom: none;
+}
+
+/* footer Section */
+
 .footer-section{
   background: #191919;
   color:white;
@@ -211,6 +226,7 @@ li:nth-child(1) {
   border-radius: 5px;
   background-color: #ffffff;
 }
+
 .footer-section .container .row{
   border-bottom: 1px solid #ccc;
 }
