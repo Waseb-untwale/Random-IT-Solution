@@ -709,6 +709,17 @@ li:nth-child(1) {
   .hero-section .hero-content h1 {
     font-size: 107px;
   }
+  .hero-section1 .hero-content h1 {
+    font-size: 107px;
+  }
+
+  .hero-section2 .hero-content h1 {
+    font-size: 107px;
+  }
+
+  .hero-section3 .hero-content h1 {
+    font-size: 107px;
+  }
 
   .Why-choose-section img{
     text-align: center;
@@ -752,6 +763,15 @@ li:nth-child(1) {
     font-size: 14px;
   }
   .hero-section .hero-content h1 {
+    font-size: 43px;
+  }
+  .hero-section1 .hero-content h1 {
+    font-size: 43px;
+  }
+  .hero-section2 .hero-content h1 {
+    font-size: 43px;
+  }
+  .hero-section3 .hero-content h1 {
     font-size: 43px;
   }
   .partner-section{
