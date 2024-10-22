@@ -10,6 +10,9 @@
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
+/* .slider_container .container{
+  width:100%;
+} */
 .navbar {
   padding: 23px;
   border-bottom: 1px solid #d5d5d5;
@@ -27,10 +30,7 @@
   background-color: #dc2316;
   color: white;
 }
-.btn a{
-  text-decoration: none;
-  color:#ffffff
-}
+
 li .nav-link {
   color: black;
 }
@@ -40,82 +40,90 @@ li .nav-link:hover {
   color: #ffff;
 }
 
-/* About section
- */
+/* main-section */
 
-.top-section {
-  background: linear-gradient(
-      to bottom,
-      rgba(12, 12, 12, 0.7),
-      rgba(5, 4, 4, 0.7)
-    ),
-    url("../images/Rectangle\ 42.png");
-  color: white;
+.services-provide-section .project-container{
+
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+  gap:20px;
+}
+.services-provide-section .project-container.grid-item{
+  display: grid;
+  place-items: center;
+}
+.services-provide-section .project-container .service-card {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
 }
 
-.top-section p {
-  font-family: Be Vietnam Pro;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
+.project-container .grid-item .RIS-section p{
+  border-bottom: 1px solid white;
+}
+.project-container .grid-item .RIS-section .learn-more a{
+  color: transparent;
+}
+.project-container .grid-item .RIS-section{
+padding: 2rem 2rem 0.5rem 2rem;
+position: relative;
+top: -17.5rem;
+color:white;
+margin-bottom: -14.5rem;
+transition: 0.5s ease-in-out;
+transform: translateY(100px);
+}
+.service-card:hover{
+  transition: scale(1.05);
+  transition: 1s ease-in-out;
 }
 
-/* feature-section */
-
-.features-section .row {
-  background: #f9f9f9;
-}
-.features-section .row h2 span {
-  display: block;
-  color: red;
-}
-.features-section .row p {
-  font-family: Be Vietnam Pro;
-  padding: 10px 10px 0px 0px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
-  text-align: left;
+.service-card:hover img{
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  opacity: 0.8;
 }
 
-/* specality-section */
-
-.specality-section .row {
-  background: #f9f9f9;
+.project-container .grid-item:hover .learn-more a{
+  color:black
 }
 
-.specality-section .row h2 span {
-  display: block;
-  color: red;
+.project-container .service-card:hover .RIS-section{
+  transform: translateY(0px);
 }
 
-.specality-section .row p {
-  font-family: Be Vietnam Pro;
-  padding: 10px 10px 0px 0px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
-  text-align: left;
+a{
+  text-decoration: none;
+  color: black;
+}
+.learn-more {
+  text-decoration: none;
+  border: 1px solid #ffff;
+  color: #ffff;
+  padding: 5px 90px 5px 0;
+  overflow: hidden;
+}
+.learn-more span {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid orange;
+  border-radius: 10px;
+  transform: translateX(-50px);
+  transition: 0.5s all ease-in-out;
+}
+.learn-more:hover span {
+  transform: translateX(150px);
 }
 
-
-/* vision section */
-
-
-.card{
-  border: 1px solid #ccc;
+.learn-more:hover {
+  border-left: none;
+  border-bottom: none;
 }
 
-.vision-section h2 {
-  padding:0px 0px 0px 70px;
-}
+/* footer-section */
 
-.vision-section h2 span{
-  display: block;
-  color:red;
-}
-
-/* footer section */
 .footer-section{
   background: #191919;
   color:white;
@@ -214,23 +222,12 @@ li:nth-child(1) {
   border-radius: 5px;
   background-color: #ffffff;
 }
+
 .footer-section .container .row{
   border-bottom: 1px solid #ccc;
 }
-
+ 
 @media (max-width:786px){
-  .features-section .row img{
-    width:75%
-  }
-  .specality-section .row img{
-    width:75%;
-  }
-  .vision-section h2{
-    padding-left:10px;
-  }
-  .vision-section .container{
-    width:80%;
-  }
   .footer-section .container .Home{
     padding-left: 0px;
   } 
@@ -243,35 +240,21 @@ li:nth-child(1) {
 }
 
 @media (max-width:450px){
-  html{
-    font-size: 14px;
-  }
-  .features-section .container{
-    margin-top: 30px;
-  }
-  .specality-section .container{
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .vision-section .container .card{
-    margin-bottom: 20px;
-  }
-  .footer-section .container p{
-    margin-bottom: 0px;
-  }
-  .top-section p{
-    font-size: 14px;
-  }
-  .features-section .row p{
-    font-size: 14px;
-  }
-  .specality-section .row p{
-    font-size: 14px;
-  }
-  .footer-section{
-    font-size: 14px;;
-  }
-  .footer-section li{
-    font-size: 14px;
-  }
+.services-provide-section .project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.services-provide-section .project-container .service-card {
+  width: 300px;
+}
+.footer-section .container p{
+  margin-bottom: 0px;
+}
+.footer-section{
+  font-size: 14px;;
+}
+.footer-section li{
+  font-size: 14px;
+}
 }

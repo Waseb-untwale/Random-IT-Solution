@@ -11,7 +11,7 @@
 }
 
 .navbar {
-  /* padding: 23px; */
+  padding: 23px;
   border-bottom: 1px solid #d5d5d5;
 }
 .image-container {
@@ -21,6 +21,10 @@
 .btn {
   background: #dc2316;
   color: black;
+}
+.btn a{
+  text-decoration: none;
+  color:#ffffff
 }
 
 .btn:hover {
@@ -35,4 +39,235 @@ li .nav-link:hover {
   background-color: #281571;
   border-radius: 5px;
   color: #ffff;
+}
+
+/* top-section */
+.top-section {
+  background: linear-gradient(
+      to bottom,
+      rgba(12, 12, 12, 0.7),
+      rgba(5, 4, 4, 0.7)
+    ),
+    url("../images/Rectangle\ 42.png");
+  color: white;
+}
+
+.top-section p {
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.founder-section .container p{
+  font-family: Be Vietnam Pro;
+font-size: 16px;
+font-weight: 300;
+line-height: 25px;
+text-align: left;
+
+}
+
+.founder-section .container .row {
+  background: #F9F9F9;
+
+}
+
+
+.founder-section .container h2 span{
+  display: block;
+  color: #dc2316;
+  font-size: 20px;
+}
+
+
+/* team-section */
+.team-section .project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap:50px;
+}
+.team-section h2 span{
+  display: block;
+  color:red;
+  font-size: 20px;
+  padding:5px;
+
+}
+
+.team-section  .project-container .social-media-icons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:20px;
+}
+.team-section .grid-item{
+  display: flex;
+ gap:20px;
+}
+
+.team-section .project-container .grid-item:nth-child(4) img{
+  padding: 10px;
+  overflow: hidden;
+  background-image: url('../images/Rectangle\ 647.png');
+  background-size: cover;
+  background-repeat: no-repeat ;
+}
+.team-section .project-container .grid-item:nth-child(5) img{
+  padding: 10px;
+  overflow: hidden;
+  background-image: url('../images/Rectangle\ 647.png');
+  background-size: cover;
+  background-repeat: no-repeat ;
+}
+.team-section .project-container .grid-item:nth-child(6) img{
+  padding: 10px;
+  overflow: hidden;
+  background-image: url('../images/Rectangle\ 647.png');
+  background-size: cover;
+  background-repeat: no-repeat ;
+}
+
+.footer-section{
+  background: #191919;
+  color:white;
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  
+}
+
+li{
+  list-style-type: none;
+}
+
+.footer-section p{
+  text-align: justify;
+  font-weight: 300;
+}
+
+.footer-section li{
+  margin: 5px;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.footer-section .container .Home{
+  padding-left:50px;
+}
+
+.footer-section .container .About{
+  padding-left:50px;
+}
+
+
+.footer-section .contact .location{
+  display: flex;
+  gap:5px;
+}
+
+.footer-section span i{
+  margin-top:10px;
+  height: 20px;
+  width: 20px;
+}
+
+.contact .image-container{
+  width: 36px;
+  padding:10px;
+}
+
+li:nth-child(1) {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.footer-section .Social{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer-section .social-icons{
+  display: flex;
+  padding-top:10px;
+  justify-content: flex-start;
+  align-items: center;
+  gap:10px;
+  
+}
+
+
+.footer-section .social-icons .facebook {
+  width:36px;
+  height: 35px;
+  padding:1px;
+  color:black;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+.footer-section .social-icons .linkdin {
+  width:36px;
+  height: 35px;
+  padding:1px;
+  color:black;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+.footer-section .social-icons .twitter {
+  width:36px;
+  height: 35px;
+  padding:1px;
+  color:black;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.footer-section .container .row{
+  border-bottom: 1px solid #ccc;
+}
+
+@media (max-width:786px){
+  .team-section .grid-item{
+    display: flex;
+    flex-direction: column;
+  }
+  .team-section  .project-container .social-media-icons{
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-section .container .Home{
+    padding-left: 0px;
+  } 
+  .footer-section .container .About{
+    padding-left: 0px;
+  }
+  .footer-section .Social{
+    padding-left:20px;
+  }
+  .team-section .project-container{
+    margin-left: 0px;
+  }
+}
+
+@media (max-width:450px){
+  .founder-section .container img{
+    width:300px;
+  }
+ .grid-item .profile img{
+      width:300px
+  }
+  .footer-section .container p{
+    margin-bottom: 0px;
+  }
+  .team-section .project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:20px;
+  }
+
 }

@@ -244,3 +244,36 @@ li:nth-child(1) {
 .footer-section .container .row{
   border-bottom: 1px solid #ccc;
 }
+@media (max-width:786px){
+  .footer-section .container .Home{
+    padding-left: 0px;
+  } 
+  .footer-section .container .About{
+    padding-left: 0px;
+  }
+  .footer-section .Social{
+    padding-left:20px;
+  }
+  .team-section .project-container{
+    margin-left: 0px;
+}
+.textarea_control{
+  display: grid;
+  grid-column: 1/ span 1;
+  }
+}
+
+@media (max-width:450px){
+  .footer-section{
+    font-size: 14px;;
+  }
+  .footer-section li{
+    font-size: 14px;
+  }
+  .footer-section .container p{
+    margin-bottom: 0px;
+  }
+  .Query-section .container .row p{
+    font-size: 14px;
+  }
+}

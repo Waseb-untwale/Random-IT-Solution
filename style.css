@@ -13,6 +13,17 @@
   padding: 23px;
   border-bottom: 1px solid #d5d5d5;
 }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+/* .slider_container .container{
+  width: 100%;
+} */
+.navbar-toggler{
+  background-color:rgba(255, 21, 0, 0.627)
+}
+
 .image-container {
   padding: 0px 20px 0px 0px;
 }
@@ -35,6 +46,12 @@ li .nav-link:hover {
   border-radius: 5px;
   color: #ffff;
 }
+
+link .nav-link:active{
+  background-color: #281571;
+  border-radius: 5px;
+  color: #ffff;
+}
 /* .hero-section {
   height: 100vh;
 } */
@@ -44,13 +61,62 @@ li .nav-link:hover {
       rgba(12, 12, 12, 0.7),
       rgba(5, 4, 4, 0.7)
     ),
-    url(./images/html-css-collage-concept-with-person\ 2.png);
+    url("./images/html-css-collage-concept-with-person\ 2.png");
   background-size: cover;
   background-position: center;
   color: #ffffff;
   padding-bottom: 30px;
 }
+.hero-section1 {
+  /* background: linear-gradient(
+      to bottom,
+      rgba(12, 12, 12, 0.7),
+      rgba(5, 4, 4, 0.7)
+    ),
+    url("./images/html-css-collage-concept-with-person\ 2.png"); */
+    background-image: url(./images/IT-solution.png);
+    /* background-image: linear-gradient(
+      to bottom,
+      #00000099,
+      rgba(137, 66, 66, 0.7)
+    ); */
 
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+.hero-section2 {
+  /* background: linear-gradient(
+      to bottom,
+      rgba(12, 12, 12, 0.7),
+      rgba(5, 4, 4, 0.7)
+    ),
+    url("./images/html-css-collage-concept-with-person\ 2.png"); */
+    background-image: url(./images/CCTV.png);
+    /* background: linear-gradient(
+      to bottom,
+      rgba(12, 12, 12, 0.7),
+      rgba(5, 4, 4, 0.7)
+    ); */
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+.hero-section3 {
+  /* background: linear-gradient(
+      to bottom,
+      rgba(12, 12, 12, 0.7),
+      rgba(5, 4, 4, 0.7)
+    ),
+    url("./images/html-css-collage-concept-with-person\ 2.png"); */
+    background-image: url(./images/IT-Infra.png);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
 a {
   text-decoration: none;
   color: white;
@@ -83,6 +149,13 @@ a {
   font-size: 20px;
   font-weight: 300;
   line-height: 34.29px;
+}
+a{
+  text-decoration: none;
+}
+
+.hero-content{
+ 
 }
 
 .learn-more {
@@ -169,7 +242,7 @@ a {
   border-bottom: 1px solid red;
   justify-content: space-between;
   background: #f9f9f9;
-  padding: 30px 30px 10px 40px;
+  padding: 30px 30px 10px 20px;
 }
 .partner-section span {
   display: block;
@@ -189,16 +262,22 @@ a {
   text-align: left;
 }
 
+
+.partner-section .heading-partner{
+  width:20%
+}
 .companyLogo-section {
-  display: flex;
+  /* display: flex;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  width:80%;
 }
-.window-img {
-  border: none;
-}
+/* .window-img {
+  width:227px;
+  margin-right:10px
+} */
 
 .companyLogo-section img {
   overflow: hidden;
@@ -214,6 +293,9 @@ a {
   color: #dc2316;
 }
 
+.Why-choose-section img{
+  width:100%;
+}
 .side-section p {
   font-family: Be Vietnam Pro;
   font-size: 16px;
@@ -251,7 +333,7 @@ a {
 /* services Section */
 
 .services-section {
-  height: 90vh;
+  /* height: 90vh; */
 }
 
 .services-section .container {
@@ -268,7 +350,21 @@ a {
   height: 90vh;
   background-position: center;
 }
+/* slider services */
+.slider_container .img_box .slide_service{
+  padding: 2rem 2rem 0.5rem 2rem;
+  position: relative;
+  top: -11.5rem;
+  color:white;
+  margin-bottom: -14.5rem;
+  transition: 0.5s ease-in-out;
+  transform: translateY(0px);
+}
 
+.swiper-pagination-bullet-active { background: #dc2316; }
+.swiper-pagination-bullet { width: 30px; height: 10px; }
+.swiper-button-next, .swiper-button-prev { background-color:black }
+.swiper-button-next, .swiper-button-prev { border: 2px solid black; }
 .services-section .container .left-section {
   display: flex;
   flex-direction: column;
@@ -292,7 +388,7 @@ a {
 
 /* project-section */
 .project-section {
-  padding: 50px;
+  padding: 50px 0px 0px 50px;
   margin-left: 50px;
 }
 
@@ -303,11 +399,9 @@ a {
 }
 
 .project-section .image-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 40px;
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(304px, 304px));
+    gap: 49px;
 }
 .project-section .project-image {
   position: relative;
@@ -325,10 +419,14 @@ a {
 }
 
 .view-project{
-  padding:60px;
+  padding:60px 0px 60px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
+}
+.view-project span{
+  color:black
 }
 .installing-os{
   text-align: center;
@@ -342,10 +440,25 @@ a {
   transition: 0.5s ease-in-out;
   color: transparent;
 }
-
+.installing-os .heading{
+  position: relative;
+}
+.installing-os .heading::after{
+  content: "";
+  height:2px;
+  background-color:transparent;
+  width: 62%;
+  position: absolute;
+  left: 92px;
+  bottom: 4px;
+}
 .project-installing:hover{
   transform: scale(1.05);
   transition: 1s ease-in-out;
+}
+
+.project-installing:hover .installing-os .heading::after{
+  background-color: #dc2316;
 }
 
 .project-installing:hover .installing-os{
@@ -400,8 +513,25 @@ a {
   justify-content: center;
 }
 
-.news-section h2{
-  margin-left: 50px;
+/* .news-section .container h2{
+  position: relative;
+
+}
+.news-section .container h2::after{
+  content: "";
+  height:2px;
+  background-color: red;
+  width:100%;
+  position: absolute;
+  left:0;
+  bottom: 0;
+}
+ .news-section .container h2 {
+  background-color: white;
+  position: relative;
+  z-index: 999;
+} */
+.news-section .container h2{
   font-family: Be Vietnam Pro;
 font-size: 40px;
 font-weight: 600;
@@ -416,7 +546,62 @@ text-align: left;
   border-bottom:none ;
 }
 
+/* feedback-section */
+.feedback-section{
+  background-color: #191919;
+  margin-bottom: 30px;
+}
+.feedback-section h3{
+  color:white;
+} 
+.feedback-section h3 span{
+  display: block;
+  color:red
+}
+.client-feedback p{
+  color:#FEf9F6;
+}
 
+.profile-section p{
+  color: #bcb9b4;
+}
+.profile-section span{
+  color: #bcb9b4;
+}
+/* feedback-section */
+.feedback-section .swiper-slide .client-feedback{
+  background: #3E3C3D;
+  border-radius: 10px;
+}
+
+.card_slider{
+  padding:50px 0;
+}
+
+.card2_slider{
+  display: flex;
+  align-items: center;
+  /* padding:50px 0; */
+}
+.card1_slider{
+  padding:50px 0;
+}
+.swiper-button-next{
+  background-color: white;
+  color:#ccc;
+  border: 1px solid #dc2316;
+}
+
+.swiper-button-prev{
+  background-color: white;
+  color:#ccc;
+  border: 1px solid #dc2316;
+}
+
+.feedback-section .swiper-slide .client-feedback .profile-section{
+  display: flex;
+  justify-content: space-between;
+}
 /* footer section */
 .footer-section{
   background: #191919;
@@ -518,4 +703,96 @@ li:nth-child(1) {
 }
 .footer-section .container .row{
   border-bottom: 1px solid #ccc;
+}
+
+@media (max-width:786px){
+  .hero-section .hero-content h1 {
+    font-size: 107px;
+  }
+
+  .Why-choose-section img{
+    text-align: center;
+    width:80%;
+  }
+  .Why-choose-section .side-section  {
+    width:80%;
+    margin: auto;
+  }
+  .services-section .left-section{
+    width:80%;
+    margin: auto;
+  }
+  .services-section .Explore-more{
+    width:80%;
+    margin: auto;
+  }
+  .project-section {
+    padding: 50px 0px 0px 50px;
+    margin-left: 0px;
+  }
+  .news-section .container .row .card:nth-child(3){
+    margin-top:30px;
+  }
+  .partner-section p{
+    font-size: 30px;
+  }
+  .footer-section .container .Home{
+    padding-left: 0px;
+  } 
+  .footer-section .container .About{
+    padding-left: 0px;
+  }
+  .footer-section .Social{
+    padding-left:20px;
+  }
+}
+
+@media (max-width:450px){
+  p{
+    font-size: 14px;
+  }
+  .hero-section .hero-content h1 {
+    font-size: 43px;
+  }
+  .partner-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .project-section{
+    padding:5px 0px 0px 9px;
+  }
+  .news-section .row .card{
+    margin-top:20px;
+  }
+  .news-section .container h2{
+    font-size: 32px;
+  }
+  .footer-section{
+    font-size: 14px;;
+  }
+  .footer-section li{
+    font-size: 14px;
+  }
+  .footer-section .container p{
+    margin-bottom: 0px;
+  }
+}
+
+h2{
+  position: relative;
+
+}
+h2 span::after{
+  content: "";
+  height:2px;
+  background-color: red;
+  width:100%;
+  position: absolute;
+  left:0;
+  bottom: 0;
+}
+h2 strong{
+  background-color: white;
+  position: relative;
+  z-index: 999;
 }
